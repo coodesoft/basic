@@ -1,0 +1,125 @@
+// out: media.css, compress: true
+
+
+#RaMediaPlayer{
+    margin: 20px auto; 
+    border: 1px solid red;
+    width: 600px;
+    height: 400px;
+    position: relative;
+}
+.ra-channel-selector-container,
+.ra-album-selector-container,
+.ra-controls{
+    position: relative;
+}
+
+//--------------- ÁREA DE ÁLBUMES -------------//
+
+.ra-album-selector-container{
+    margin-top: 15px;
+    height: 170px;
+
+    .ra-album-nav{
+        position: absolute;
+        cursor: pointer;
+        transition: border 0.3s ease;
+        &:hover{
+            transition: border 0.3s ease;
+        }
+        
+    }
+
+    .ra-playback-info{
+        position: absolute;
+        overflow: hidden;
+    }
+    
+    .ra-album-list{
+        position: absolute;
+        overflow: hidden;
+        background: black;
+        border-radius: 10px;
+        ul{
+            list-style: none;
+            position: relative;
+            padding-top: 6px;
+            padding-left: 0px;
+            transition: right 0.3s ease;
+            li{
+                position: relative;
+                display: inline-block;
+                cursor: pointer;
+                img{
+                    width: 100%;
+                }
+            }    
+        }
+    }
+    
+
+
+}
+
+
+//--------------- ÁREA DE CANALES -------------//
+
+.ra-channel-selector-container{
+
+    .ra-ch-list{
+        position: absolute;
+        ul{
+            list-style: none;
+            padding: 0px;
+            transition: right 0.1s ease;
+            position: relative;
+            li{
+                display: inline-block;
+                cursor: pointer;
+            }
+        }
+    }
+    
+    .ra-ch-nav{
+        height: 35px;
+        width: 30px;
+        border: 1px solid green;
+        position: absolute;
+        top: 5px;
+        transition: border 0.3s ease;
+        &:hover{
+            transition: border 0.3s ease;
+        }        
+    }
+    
+    .ra-ch-name{
+        position: absolute;
+    }
+
+}
+
+//--------------- ÁREA DE CONTROLES -------------//
+
+.ra-controls{
+    position: absolute;
+    .ra-control{
+        display: inline-block;
+    }
+    
+}
+
+.vertical-volume{
+        right: -57.5px;
+        top: -65px;
+        width: 25px !important;
+        height: 100px !important;
+        padding: 0;
+        background: black !important;
+        .volume-indicator{
+            border: 1px solid green;
+            background: red;
+            height: 30px;
+            width: 25px;
+            position: absolute;
+        }
+}

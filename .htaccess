@@ -1,0 +1,6 @@
+# deny from all
+
+AddType text/css .css 
+
+#Redirect /index.html http://radioalbum.com.ar/basic/web/
+
