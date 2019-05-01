@@ -22,11 +22,11 @@ $(function(){
     app.unsubscribe(pause);
     
     app.subscribe(play, 'PLAY_SONG');
+    
     app.subscribe(pause, 'PAUSE_SONG');
     
+    
     let volume = CircularVolumeView.getInstance();
-//    let volume = HorizontalVolumeView.getInstance();
-//    let volume = VerticalVolumeView.getInstance();    
 
     app.unsubscribe(volume.init);
     app.subscribe(volume.init, 'INIT_VOLUME');

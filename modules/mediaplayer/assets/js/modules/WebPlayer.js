@@ -51,8 +51,15 @@ var WebPlayer = (function($){
           if (promise !== undefined) {
             promise.then(_ => {
                 console.log('Reproducción automática iniciada');
-            }).catch(error => {
+       
+                let object = new Object();
+                object['song'] = _actualSong,
+                object['album'] = _album;
+                controller.notify(object, 'PLAY_SONG');
+           }).catch(error => {
                 alert('No se pudo iniciar la reproducción automática. :( La configuración de tu navegador no lo permite.')
+                console.log('Descripción del error:')
+                console.log(error);
             });
         }
       }
@@ -65,6 +72,7 @@ var WebPlayer = (function($){
           object['album'] = _album;
 
           controller.notify(object, 'PLAY_SONG');
+          
       }
       
       self.pause = function(){

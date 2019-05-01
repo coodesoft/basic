@@ -20,7 +20,7 @@ var ChannelView = (function ($){
         
         self.setActiveChannel = function(li, data){
             li.classList.add('active');
-            self.CHANNEL_NAME.innerHTML = data.name;
+            self.CHANNEL_NAME[0].textContent = data.name;
         }
         
         self.appendToDOMList = function(data){
@@ -59,14 +59,22 @@ var ChannelView = (function ($){
             
         }
         
+        self.setChannelInfo = function(info){
+            self.CHANNEL_NAME[0].innerHTML = info;
+        }
+        
         self.init = function(){
             self.CHANNEL_LIST.style.right = '0px';
             $('.'+Config.ui.CHANNEL_CONTAINER).off().on('click', '.'+Config.ui.CHANNEL_LIST+' li', function(){
-                document.getElementsByClassName(Config.ui.CHANNEL_NAME).textContent = this.getAttribute('data-name');
                 _actualChannel = this.getAttribute('data-name');
+                
+                $(this).siblings().removeClass('active');
+                $(this).addClass('active');
+                
                 let channel = new Channel();
                 channel.id = this.getAttribute('data-id');
-                channel.name = this.getAttribute('data-name');                
+                channel.name = this.getAttribute('data-name');
+                self.setChannelInfo(this.getAttribute('data-name'));
                 controller.notify(channel, 'CLICK_CHANNEL');
             });
             
