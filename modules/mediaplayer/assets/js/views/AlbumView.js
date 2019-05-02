@@ -26,7 +26,8 @@ var AlbumView = (function($){
                 document.getElementsByClassName(Config.ui.ALBUML_NAME)[0].innerHTML = data.name;
             }
             li.setAttribute('data-id', data.id);
-            li.setAttribute('data-name', data.name);            
+            li.setAttribute('data-name', data.name); 
+            li.setAttribute('data-artist', data.artist);
             var art = document.createElement("img");
             art.setAttribute('src', data.art);
             li.appendChild(art);
@@ -92,6 +93,7 @@ var AlbumView = (function($){
                 let album = new Album();
                 album.id = this.getAttribute('data-id');
                 album.name = this.getAttribute('data-name');
+                album.artist = this.getAttribute('data-artist');
                 controller.notify(album, 'CLICK_ALBUM');
             });
             

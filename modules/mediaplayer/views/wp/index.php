@@ -38,5 +38,5 @@ $this->title = 'Radio Album';
 
 
 <div class="col-12">
-    <?php echo WpSelector::widget(['arreglado'	=> array('a','s','c','m','b','e','t','g','p','l','i','y','d','n','k','w','z','j','h','x','r','v','f','o','u','q')]); ?>	
+    <?php echo WpSelector::widget(['arreglado'	=> array('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j')]); ?>	
 </div>

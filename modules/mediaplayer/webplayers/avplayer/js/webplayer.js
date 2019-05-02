@@ -13,6 +13,10 @@ function pause (){
 
 }
 
+function init (){
+        ChannelView.getInstance().updateWidth(50);
+}
+
 $(function(){
 	
     let app = Application.getInstance();
@@ -22,9 +26,8 @@ $(function(){
     app.unsubscribe(pause);
     
     app.subscribe(play, 'PLAY_SONG');
-    
     app.subscribe(pause, 'PAUSE_SONG');
-    
+    app.subscribe(init, 'INIT_CHANNEL_VIEW');
     
     let volume = CircularVolumeView.getInstance();
 
@@ -35,4 +38,6 @@ $(function(){
     param['volume'] = webplayer.volume();
     
     volume.init(param);
-})
+    if (ChannelView.getInstance().CHANNEL_LIST)
+        ChannelView.getInstance().updateWidth(50);
+});

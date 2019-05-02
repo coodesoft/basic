@@ -10,6 +10,8 @@ var ChannelView = (function ($){
     
         let actualOffset;
         
+        let channelCount = 0;
+        
         self.CHANNEL_NAME = document.getElementsByClassName(Config.ui.CHANNEL_NAME);
         
         self.CHANNEL_LIST_WRAPPER = document.querySelector('.'+Config.ui.CHANNEL_LIST);
@@ -51,11 +53,19 @@ var ChannelView = (function ($){
                 self.appendToDOMList(ch);
                 size++;
             }
-            
+            channelCount = size;
             let width = size*self.CHANNEL_VIEW_SIZE;
-
+            
             self.CHANNEL_LIST.style.width = width+'px';
             self.init(); 
+            controller.notify(null, 'INIT_CHANNEL_VIEW');
+        }
+        
+        self.updateWidth = function(channel_view = 0){
+            self.CHANNEL_VIEW_SIZE = channel_view;
+            let width = channelCount * self.CHANNEL_VIEW_SIZE;
+            
+            self.CHANNEL_LIST.style.width = width + 'px';
             
         }
         
