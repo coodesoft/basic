@@ -1,64 +1,42 @@
 /**
- * 
+ *
  */
+ function play (){
+ 		document.getElementsByClassName('ra-play')[0].classList.add('active');
+ 		document.getElementsByClassName('ra-pause')[0].classList.remove('active');
+ }
 
-$(function(){
-	$('body').on('dvplayer', '#webplayer', function(){
-		$('#webplayer').raSelector({
-			channels: {
-				css: { 
-					width: '44%', height: '39px',
-					top: '71%', left: '12.5%'
-				},
-				prev: {
-					width: '0%', height: '0%',
-					top: '22%', left: '3.4%'
-				},
-				next: {
-					width: '0%', height: '0%',
-					top: '22%', right: '2.7%'
-				},
-				list: {
-					width: '74%', height: '65%',
-					top: '11px', left: '41px'
-				},
-				imgSelector: {
-					width: '18px', height: '34px',
-					top: '6px', left: '9px'
-				},
-				elementInfo : {
-					width: '100%', height: '28px',
-					top: '-45%', left: '0%',
-				}
-			},
-			albums: {
-				css: { 
-					width: '43%', height: '110px',
-					top: '39%', left: '12.5%'
-				},
-				prev: {
-					width: '0%', height: '0%',
-					top: '21%', left: '4%'
-				},
-				next: {
-					width: '0%', height: '0%',
-					top: '21%', right: '4%'
-				},
-				list: {
-					width: '100px', height: '100px',
-					top: '7px', left: '106px'
-				},
-				marquee : { 
-					width: '294px', height: '20px',
-					top: '-33%', left: '0%', color: 'whitesmoke'
-				},
-			},
-			sliderType : 'simple',
-			skin: 'dvplayer',
-			volumeType: 'Rot',
-		});
-		setDefaultSkinValues();
-	})
-})
-	
+ function pause (){
+ 		document.getElementsByClassName('ra-play')[0].classList.remove('active');
+ 		document.getElementsByClassName('ra-pause')[0].classList.add('active');
 
+ }
+
+ function init (){
+ 				ChannelView.getInstance().updateWidth(50);
+ }
+
+ $(function(){
+
+ 		let app = Application.getInstance();
+ 		let webplayer = WebPlayer.getInstance();
+
+ 		app.unsubscribe(play);
+ 		app.unsubscribe(pause);
+
+ 		app.subscribe(play, 'PLAY_SONG');
+ 		app.subscribe(pause, 'PAUSE_SONG');
+ 		app.subscribe(init, 'INIT_CHANNEL_VIEW');
+
+ 		let volume = CircularVolumeView.getInstance();
+
+ 		app.unsubscribe(volume.init);
+ 		app.subscribe(volume.init, 'INIT_VOLUME');
+
+ 		let param = new Object();
+ 		param['volume'] = webplayer.volume();
+
+ 		volume.init(param);
+ 		if (ChannelView.getInstance().CHANNEL_LIST)
+ 				ChannelView.getInstance().updateWidth(50);
+ });
