@@ -14,14 +14,17 @@ var SkinSelectorView = (function($){
         
         let defaultSkin = 'avplayer';
         
-        let controller = SkinController.getInstance();
-    
+
         let Intervalo = 0; //Variable que contendra el id del intervalo de actualizacion del selector
         
         const Vel_mov = 100; 
         
         const Margen_izq = 20;
         
+        
+        let getServerURL = function(){
+            return ((location.href.split('/'))[0])+'//'+((location.href.split('/'))[2]) + "/";
+        }
         
         let setDynamicAsset = (viewID) => {
 
@@ -47,11 +50,20 @@ var SkinSelectorView = (function($){
         }
         
         let setSkin = (param) => {
+            ProgressBarView.getInstance().update(0);
+            $('#RaMediaPlayer').hide();
             $('#RaMediaPlayer').removeClass(skin);
             skin = param;
             $('.skin-element').css('background', 'url(' + WebPath + '/webplayers/' + skin + '/images/img.png) no-repeat');
             $('#RaMediaPlayer').addClass(skin);
+            ProgressBarView.getInstance().update(5);
+            let img = new Image();
             
+            img.onload = function() {
+				ProgressBarView.getInstance().update(60);
+				$('#RaMediaPlayer').trigger(Config.status.IMAGE_LOADED);
+            };
+            img.src = getServerURL()+WebPath + '/webplayers/' + skin + '/images/img.png';
         };
         
         let configure = (skin) => {
@@ -88,7 +100,8 @@ var SkinSelectorView = (function($){
         }   
         
         let situarControl = function(Control,Posicion) {
-            var limite = 100/parseInt($("#wp-selector-display").css('width'))*parseInt($('.bullet').css('width'))*26 - 100;
+            var limite = 100/parseInt($("#wp-selector-display").css('width'))*parseInt($('.bullet').css('width'))*11.5 - 100;
+           
             if (Posicion < Margen_izq && Posicion > -limite){
             $(Control).animate({'margin-left': Posicion + '%'},Vel_mov);
             $(Control).attr('data-Valor',Posicion);} 
@@ -110,6 +123,16 @@ var SkinSelectorView = (function($){
 
                 if (Intervalo == 0)
                     Intervalo = setInterval(actualizarSelector, Vel_mov);	
+            });          
+            
+            $('body').on('mousemove','#flecha-ant', function(event) { 
+                $("#wp-selector .bullet-first").attr('data-mover',15);
+                actualizarSelector();
+            });
+
+            $('body').on('mousemove','#flecha-sig', function(event) { 
+                $("#wp-selector .bullet-first").attr('data-mover',-15);
+                actualizarSelector();
             });            
 
         }

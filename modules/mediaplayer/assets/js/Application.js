@@ -22,6 +22,8 @@ var Application = (function($){
         let playback = Playback.getInstance();
 
         let controller = Subject.getInstance();
+        
+        let progressBar = ProgressBarView.getInstance();
 
         let loadChannels = function(data){
             requester.getContent('channels', undefined, 'LOAD_CHANNEL');
@@ -37,13 +39,49 @@ var Application = (function($){
             let params = [];
             params['id'] = store.activeAlbum().id;
             requester.getContent('songs', params, 'LOAD_SONG');
-        }    
+        }
+        
+        let updatePlaybackView = function(data){
+            let root = $('.'+Config.ui.ROOT);
+            
+            if (root.attr('data-playbackView') == Config.ui.SINGLE_PLAY)
+                SinglePlaybackView.getInstance().setStatus(webPlayer.status());
+            else
+                DoblePlaybackView.getInstance().setStatus(webPlayer.status());
+        }
 
+        
+        let storeSocialChannel = function(){
+            let channel = [];
+            channel['id'] = $('#channelId').attr('data-channel');
+            channel['name'] = $('#channelName').attr('data-channelName');
+            
+            store.socialAlbumId = $('#albumId').attr('data-album');
+            
+            store.loadChannels( [channel] );
+
+        }
+        
         /*
          * Se suscriben todos los métodos necesarios para establecer
          * el estado inicial de la aplicación.
          */
         self.init = function(){
+            
+            
+            /*
+             * *******  CARGA SOCIAL DEL CONTENIDO  ********
+             */
+            
+            let socialAlbum = document.querySelector('#albumId');
+            if (socialAlbum){
+                store.social = true;
+                requester.social = true;
+                controller.subscribe(storeSocialChannel, 'SOCIAL_CONNECTION' );
+                controller.subscribe(webPlayer.configure, 'SOCIAL_CONNECTION' );
+
+            } 
+             
 
             /*
              * *******  CARGA INICIAL DEL CONTENIDO  ********
@@ -82,7 +120,10 @@ var Application = (function($){
 
             controller.subscribe(playback.playNextSong, 'END_AUDIO')
 
+            controller.subscribe(albumView.updatePlaybackInfo, 'PLAY_SONG');
 
+            controller.subscribe(updatePlaybackView, 'PLAY_SONG');
+            
             /*
              * *******  BIND DE FUNCIONES  ********
              */
@@ -93,7 +134,6 @@ var Application = (function($){
 
             controller.subscribe(store.activeAlbum, 'CLICK_ALBUM');
 
-            controller.subscribe(albumView.updatePlaybackInfo, 'PLAY_SONG');
             
             controller.subscribe(webPlayer.play, 'CLICK_PLAY');
 
@@ -108,9 +148,10 @@ var Application = (function($){
             // se suscribe el bind de eventos para los controles de reproducción
             controlView.init();
 
+            progressBar.init();
             // se obtienen los parametros de conexión local y del mServer
             // este método dispara las llamadas a las suscripciones previamente definidas
-            requester.getConnectionParmas();
+            requester.getConnectionParmas();                
             webPlayer.listen();
 
             console.log('Application init success!! ');

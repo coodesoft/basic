@@ -8,24 +8,27 @@ var Store = (function($){
         
         let _albums = new Collection();
         
-        
         let _activeChannel;
         
         let _activeAlbum;
         
         let controller = Subject.getInstance();
         
+        self.social = false;
+        
+        self.socialAlbumId = 0;
         
         self.loadChannels = function(data){
-            data = JSON.parse(data);
+            
+            
+            data = !self.social ? JSON.parse(data) : data;
             for(let t=0; t<data.length; t++){
                 
                 let newChannel = new Channel();
                 newChannel.load(data[t])
 
-                if (newChannel.status == true){
+                if ( newChannel.status == true )
                     self.activeChannel(newChannel);    
-                }
                 
                 _channels.add(newChannel);
             }
@@ -39,8 +42,13 @@ var Store = (function($){
                 let newAlbum = new Album();
                 newAlbum.load(data[t])
                 
-                if (t == 0)
-                    self.activeAlbum(newAlbum);    
+                if ( !self.social ){
+                    if (t == 0)
+                        self.activeAlbum(newAlbum);    
+                } else{
+                    if (newAlbum.id == self.socialAlbumId)
+                        self.activeAlbum(newAlbum);
+                }
                 _albums.add(newAlbum);
             }
 

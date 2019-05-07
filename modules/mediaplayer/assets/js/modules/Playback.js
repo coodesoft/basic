@@ -6,9 +6,11 @@ var Playback = (function($){
     
     let controller = Subject.getInstance();
     
+    
     function Playback(){
         let self = this;
         
+        self.social = false;
         
         self.load = function(data){
             webPlayer.load(data);

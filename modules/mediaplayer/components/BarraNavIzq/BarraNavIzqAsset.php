@@ -1,12 +1,12 @@
 <?php
 
-namespace app\modules\webplayer\components\BarraNavIzq;
+namespace app\modules\mediaplayer\components\BarraNavIzq;
 
 use yii\web\AssetBundle;
 
 class BarraNavIzqAsset extends AssetBundle
 {
-    public $sourcePath = '@app/modules/webplayer/components/BarraNavIzq';
+    public $sourcePath = '@app/modules/mediaplayer/components/BarraNavIzq';
 
     public $css = [
         'css/BarraNavIzq.css',

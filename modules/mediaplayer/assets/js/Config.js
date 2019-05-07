@@ -2,6 +2,12 @@ var Config = {
     
     'defaultChannel' : 'Misc',
     
+    'status' :{
+        'PLAYING' : 'playing',
+        'PAUSED': 'paused',
+        'IMAGE_LOADED': 'image-loaded',
+    },
+    
     ui: {
         'ROOT': 'RaMediaPlayer',
         
@@ -18,7 +24,12 @@ var Config = {
         'CONTROLS': 'ra-controls',
         
         'VOLUME': 'ra-volume',
+        'VOLUME_INDICATOR': 'volume-indicator',
+        
         'PLAY': 'ra-play',
+        'SINGLE_PLAY': 'single-play',
+        'DOBLE_PLAY' : 'doble-play',
+        
         'PAUSE': 'ra-pause',
         'PREV_SONG': 'ra-prevsong',
         'NEXT_SONG': 'ra-nextsong',

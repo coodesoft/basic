@@ -18,22 +18,24 @@ return [
             	],
             	[
 					'pattern' => 'imagenalbum/<a>',
-					'route' => 'webplayer/wp/imagenalbum',
+					'route' => 'mediaplayer/wp/imagenalbum',
 							
 					],
                 'editor-paginas' => 'PagEdit/main/inicio', 
 				'edit-estatica' => 'PagEdit/main/editar', 
 				'guardar-estatica' => 'PagEdit/main/guardar', 
-                'webplayer' => 'webplayer/wp/index',
+                'mediaplayer' => 'mediaplayer/wp/index',
+                'mediaplayer/social/<c:\d+>/<a:\d+>' => 'mediaplayer/wp/social/',
                 'mediaplayer/<action>' => 'mediaplayer/wp/<action>',                
                 'mediaplayer/<action>/<t>/<token>/' => 'mediaplayer/wp/<action>',
                 'mediaplayer/<action>/<t>/<token>/<id>' => 'mediaplayer/wp/<action>',
                 
                 'tageditor' => 'mp3editor/music-editor/index',
                 'tageditor/<action:(navigate|set-tags|get-tags)>' => 'mp3editor/music-editor/<action>',
+                
                 [
-                    'pattern' => 'webplayer/<action:(connection-params|obtener-lista|social|social2|index)>/<i:\w{1}>/<c:\d+>/<a:\d+>/<x>',
-                    'route' => 'webplayer/wp/<action>',
+                    'pattern' => 'mediaplayer/<action:(connection-params|obtener-lista|social|social2|index)>/<c:\d+>/<a:\d+>/<x>',
+                    'route' => 'mediaplayer/wp/<action>',
                     'defaults' => ['i' => '', 'c'=> '', 'a'=>'', 'x' => 'http://www.radioalbum.com.ar/basic/web/images/logora.png'],
                     
                 ],

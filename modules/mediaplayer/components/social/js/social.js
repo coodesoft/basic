@@ -1,11 +1,11 @@
-const RutaWeb = '/basic/web/index.php/webplayer/social';
+const RutaWeb = '/basic/web/index.php/mediaplayer/social';
 const TamFin = '600%';
 
 $('body').on('click','.opcion', function() { 
 	var IdBoton = $(this).attr('id');
 	var Agregaface='';
 	if (IdBoton == 'facebook') {
-		Agregaface=$('#webplayer').css('background-image').replace('url(','').replace(')','');
+		Agregaface=$('#RaMediaPlayer').css('background-image').replace('url(','').replace(')','');
 	} 
 	if (IdBoton == 'url') {
 		MostrarUrl();
@@ -28,16 +28,13 @@ function PrefijoSocial(id){
 }
 
 function ArmarUrl(){
-	var Skin = $('#webplayer').attr('data-resource')[0];
-	var channelID = $('#wp-player').attr('data-channel');
-	if (channelID == undefined){
-		channelID = $('#parametros').attr('data-channel');
-	}
-	var AlbumId = $('#wp-player').attr('data-album');
-	var pref = '&';
+	var channelID = Store.getInstance().activeChannel().id;
+	var AlbumId = Store.getInstance().activeAlbum().id;
+    
 	var dir = ((location.href.split('/'))[0])+'//'+((location.href.split('/'))[2]) + "/";
-	dir += RutaWeb+'/'+Skin+'/'+channelID+'/'+AlbumId;
-	return dir;
+	dir += RutaWeb+'/'+channelID+'/'+AlbumId;
+	console.log(dir);
+    return dir;
 }
 
 function MuestraVisor(){

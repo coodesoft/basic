@@ -1,0 +1,253 @@
+// out: webplayer.css, compress: true
+
+
+.ra-channel-selector-container,
+.ra-album-selector-container,
+.ra-controls{
+    margin: 15px 10px 0;
+    
+}
+
+//--------------- ÁREA DE ÁLBUMES -------------//
+
+#RaMediaPlayer{
+    background-position: 100% 0% !important;
+    background-size: 113% !important;
+    
+}
+
+.ra-album-selector-container{
+    top: 130px;
+    height: 10px;
+    width: 300px;
+    left: 140px;
+
+    .ra-album-nav{
+        top: 25px;
+        width: 0; 
+        height: 0; 
+    }
+
+    .ra-prev-album-nav{
+        left: 0px;
+        border-right: 25px solid #39713c;
+        border-top: 40px solid transparent;
+        border-bottom: 40px solid transparent;; 
+        &:hover{
+            border-right: 25px solid #473913;
+        }
+    }
+
+    .ra-next-album-nav{
+        right: 3px;
+        border-left: 25px solid #39713c;
+        border-top: 40px solid transparent;
+        border-bottom: 40px solid transparent;
+        &:hover{
+            border-left: 25px solid #473913;
+        }
+    }
+    
+
+    .ra-album-list{
+        width: 210px;
+        height: 110px;
+        left: 45px;
+        top: 13px;
+        ul{
+            li{
+                height: 85px;
+                width: 85px;
+                border: 1px solid green;
+                margin: 0 10px;
+            }
+        }
+    }
+    
+    .ra-playback-info{
+        border: 1px solid #aaa;
+        width: 110px;
+        height: 25px;
+        bottom: -134px;
+        right: 89px;
+        color: whitesmoke;
+        padding-top: 4px;
+        background: black;
+        border-radius: 6px;
+    }
+    
+}
+
+
+//--------------- ÁREA DE CANALES -------------//
+
+.ra-channel-selector-container{
+    position: absolute;
+    width: 90%;
+    right: 31px;
+    height: 42px;
+    margin-top: 15px;
+    top: 32px;   
+    .ra-ch-list{
+        width: 386px;
+        top: 21px;
+        right: 28px;
+        height: 18px;
+        overflow: hidden;
+        background: #111;
+        padding-top: 5px;
+        ul{
+            right: 0px;
+            li{
+                border-top: 1px solid #355716;
+                border-left: 1px solid #355716;
+                border-right: 1px solid #355716;
+                width: 20px;
+                height: 30px;
+                margin: 0 10px;
+                background: #4a773e;
+                &:hover{
+                    border-top: 2px solid #355716;
+                    border-left: 2px solid #355716;    
+                    border-right: 2px solid #355716;                
+                }
+                &.active{
+                    background: black;
+                    border-top: 3px solid green;
+                    border-left: 3px solid green;    
+                    border-right: 3px solid green;                
+                }    
+            }
+        }
+    }
+
+    .ra-ch-nav{
+        position: absolute;
+        top: 11px;
+        border-radius: 5px;
+        cursor: pointer;
+        height: 29px;
+    }
+
+    .ra-prev-ch-nav{
+        left: 158px;
+        border-right: 20px solid #895715;
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        top: 40px; 
+        &:hover{
+            border-right: 20px solid #758c39;
+        }        
+    }
+
+    .ra-next-ch-nav{
+        right: 54px;
+        border-left: 20px solid #895715;
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        top: 40px; 
+        &:hover{
+            border-left: 20px solid #758c39;
+        }        
+        
+    }
+    
+    .ra-ch-name{
+        width: 45%;
+        height: 23px;
+        padding-bottom: 1px;
+        position: absolute;
+        top: 46px;
+        left: 37%;
+        background: black;
+        border: 2px solid #727272;
+        color: whitesmoke;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+}
+
+//--------------- ÁREA DE CONTROLES -------------//
+
+.ra-controls{
+    right: 38px;
+    width: 85.5%;
+    bottom: 28px;;
+    height: 100px;
+    .ra-control{
+        width: 35px;
+        height: 28px;
+        bottom: 1px;
+        display: inline-block;
+        position: absolute;
+        background-size: 1200%!important;
+        cursor: pointer;    
+    }
+    
+    .ra-volume{
+        left: 56px;
+        top: 37px;
+        padding: 0;
+        background-position: -0.1% 0 !important;
+        width: 70px;
+        height: 70px;
+        background-size: 900% !important;        
+    }
+    
+    .ra-play{
+        background-position: -0.4% 0% !important;
+        right: 81px;
+        bottom: 15px;
+        width: 53px;
+        height: 35px;   
+        display: none;
+    }
+    
+    .ra-pause{
+        background-position: -.4% 8% !important;
+        right: 81px;
+        bottom: 15px;
+        width: 53px;
+        height: 35px;        
+        &.active{
+            background-position: 60.5% 0% !important;
+        }
+    }
+    
+    .ra-prevsong{
+        right: 135px;
+        top: 10px;
+        background-position: -1% 40.5% !important;
+        &:active{
+            background-position: -1% 32.6% !important;
+        }
+    }
+    
+    .ra-nextsong{
+        right: 28px;
+        top: 10px;
+        background-position: 0% 24% !important;
+        &:active{
+            background-position: 0% 16% !important;
+        }        
+    }
+}
+
+.horizontal-volume{
+        width: 100px !important;
+        height: 8px !important;
+        padding: 0;
+        background: black !important;
+        left: 36px !important;
+        top: 67px !important;
+        .volume-indicator{
+            border: 1px solid #192c19;
+            background: #0a540d;
+            height: 30px;
+            width: 14px;
+            position: absolute;
+            top: -12px !important;
+            box-shadow: 1px 1px 10px #111;        
+        }
+}

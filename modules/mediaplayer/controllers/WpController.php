@@ -30,6 +30,7 @@ class WpController extends RadioAlbumController{
                                       'channels', 
                                       'albums',
                                       'thumbnail',
+                                      'social',
                                      ],
                         'allow' => true,
                         'roles' => ['?'],
@@ -99,7 +100,9 @@ class WpController extends RadioAlbumController{
     }
     
     public function actionIndex(){
-        return $this->render('index');
+        return $this->render('index', [ 'urlimage' => '/images/logora2.png', 
+                                        'descripcion'=>'Radio Album'
+                                      ]);
     }
 
     public function actionChannels(){
@@ -164,6 +167,31 @@ class WpController extends RadioAlbumController{
             return Json::encode($arrSongs);
         }
     }
+
+    public function actionSocial(){
+	 		//cargamos los parametros
+	 	$req = Yii::$app->request;
+    	$c = $req->get('c');//canal
+    	$a = $req->get('a');//album
+
+        $album = Album::find()->where(['id' => $a])->one();
+	 	$NombreAlbum = $album->name;
+        
+        $params = Json::decode($this->actionConnectionParams());
+        $urlImage = Url::to(['/mediaplayer/wp/thumbnail', 't' => $params['t'], 'token' => $params['token'], 'id' => $album->id], true);
+        
+        $channel = Channel::findOne($c);
+        
+
+        return $this->render('index',[ 'urlimage' =>$urlImage, 
+                                       'album' => $album->id,
+                                       'channel' => $channel->id,
+                                       'channelName' => $channel->name,
+                                       'descripcion' => 'Escuchando '.$NombreAlbum.' en Radio Album!'
+                                     ]
+                            );
+	 }
+
 }
 
 ?>

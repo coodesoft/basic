@@ -18,12 +18,12 @@ var VerticalVolumeView = (function($){
             $('.'+Config.ui.VOLUME).removeClass(Config.ui.CIRCULAR_VOLUME);
             $('.'+Config.ui.VOLUME).removeClass(Config.ui.HORIZONTAL_VOLUME);
             $('.'+Config.ui.VOLUME).addClass(Config.ui.VERTICAL_VOLUME);
+            $('.'+Config.ui.VOLUME).removeAttr('style');
             
-            if (!control){
-                control = document.createElement('div');
-                control.classList.add('volume-indicator');
-                slot.appendChild(control);
-            }
+            $('.'+Config.ui.VOLUME_INDICATOR).remove();
+            control = document.createElement('div');
+            control.classList.add(Config.ui.VOLUME_INDICATOR);
+            slot.appendChild(control);
         }
         
         

@@ -40554,3 +40554,2156 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1556629756.508
     'REQUEST_TIME' => 1556629756
 ]
+2019-05-06 00:50:36 [127.0.0.1][-][-][error][Error] Error: Class 'social' not found in /opt/lampp/htdocs/basic/modules/mediaplayer/views/wp/index.php:32
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(325): require()
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(app\modules\mediaplayer\controllers\WpController))
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(367): yii\base\View->render('index', Array, Object(app\modules\mediaplayer\controllers\WpController))
+#4 /opt/lampp/htdocs/basic/modules/mediaplayer/controllers/WpController.php(102): yii\base\Controller->render('index', Array)
+#5 [internal function]: app\modules\mediaplayer\controllers\WpController->actionIndex()
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('mediaplayer/wp/...', Array)
+#10 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#12 {main}
+2019-05-06 00:50:36 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs:32:\"mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT\";'
+    'advanced-backend' => '121783d6e275cf7dbbb78ef213acec30'
+    '_csrf-backend' => 'adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"oefTCT1zGHftFhw8l-gldazxry_ggYxn\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'XM9ovFoF7LnFkUc3@7pmiAAAAAI'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs%3A32%3A%22mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT%22%3B; advanced-backend=121783d6e275cf7dbbb78ef213acec30; _csrf-backend=adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22oefTCT1zGHftFhw8l-gldazxry_ggYxn%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.1.26 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '39320'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/index.php/mediaplayer/index'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PATH_INFO' => '/mediaplayer/index'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/mediaplayer/index'
+    'PHP_SELF' => '/basic/web/index.php/mediaplayer/index'
+    'REQUEST_TIME_FLOAT' => 1557096636.873
+    'REQUEST_TIME' => 1557096636
+]
+2019-05-06 00:51:05 [127.0.0.1][-][-][error][Error] Error: Class 'app\modules\webplayer\components\BarraNavIzq\BarraNavIzqAsset' not found in /opt/lampp/htdocs/basic/modules/mediaplayer/views/wp/index.php:12
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(325): require()
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(app\modules\mediaplayer\controllers\WpController))
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(367): yii\base\View->render('index', Array, Object(app\modules\mediaplayer\controllers\WpController))
+#4 /opt/lampp/htdocs/basic/modules/mediaplayer/controllers/WpController.php(102): yii\base\Controller->render('index', Array)
+#5 [internal function]: app\modules\mediaplayer\controllers\WpController->actionIndex()
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('mediaplayer/wp/...', Array)
+#10 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#12 {main}
+2019-05-06 00:51:05 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs:32:\"mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT\";'
+    'advanced-backend' => '121783d6e275cf7dbbb78ef213acec30'
+    '_csrf-backend' => 'adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"oefTCT1zGHftFhw8l-gldazxry_ggYxn\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'XM9o2UekKrXbq3dyPainUwAAAAg'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs%3A32%3A%22mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT%22%3B; advanced-backend=121783d6e275cf7dbbb78ef213acec30; _csrf-backend=adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22oefTCT1zGHftFhw8l-gldazxry_ggYxn%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.1.26 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '39334'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/index.php/mediaplayer/index'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PATH_INFO' => '/mediaplayer/index'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/mediaplayer/index'
+    'PHP_SELF' => '/basic/web/index.php/mediaplayer/index'
+    'REQUEST_TIME_FLOAT' => 1557096665.788
+    'REQUEST_TIME' => 1557096665
+]
+2019-05-06 00:53:26 [127.0.0.1][-][-][error][Error] Error: Class 'app\modules\webplayer\components\BarraNavIzq\BarraNavIzqAsset' not found in /opt/lampp/htdocs/basic/modules/mediaplayer/views/wp/index.php:12
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(325): require()
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(app\modules\mediaplayer\controllers\WpController))
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(367): yii\base\View->render('index', Array, Object(app\modules\mediaplayer\controllers\WpController))
+#4 /opt/lampp/htdocs/basic/modules/mediaplayer/controllers/WpController.php(102): yii\base\Controller->render('index', Array)
+#5 [internal function]: app\modules\mediaplayer\controllers\WpController->actionIndex()
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('mediaplayer/wp/...', Array)
+#10 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#12 {main}
+2019-05-06 00:53:26 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs:32:\"mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT\";'
+    'advanced-backend' => '121783d6e275cf7dbbb78ef213acec30'
+    '_csrf-backend' => 'adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"oefTCT1zGHftFhw8l-gldazxry_ggYxn\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'XM9pZq1JeHoeL88dEuTk4QAAAAA'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs%3A32%3A%22mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT%22%3B; advanced-backend=121783d6e275cf7dbbb78ef213acec30; _csrf-backend=adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22oefTCT1zGHftFhw8l-gldazxry_ggYxn%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.1.26 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '39352'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/index.php/mediaplayer/index'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PATH_INFO' => '/mediaplayer/index'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/mediaplayer/index'
+    'PHP_SELF' => '/basic/web/index.php/mediaplayer/index'
+    'REQUEST_TIME_FLOAT' => 1557096806.312
+    'REQUEST_TIME' => 1557096806
+]
+2019-05-06 22:29:56 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: mediaplayer/wp/novedades in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php:122
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('novedades', Array)
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('mediaplayer/wp/...', Array)
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2019-05-06 22:29:55 [127.0.0.1][-][-][info][application] $_GET = [
+    't' => '1'
+    'token' => '5'
+    'id' => '127'
+]
+
+$_COOKIE = [
+    '_csrf' => '2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs:32:\"mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT\";'
+    'advanced-backend' => '121783d6e275cf7dbbb78ef213acec30'
+    '_csrf-backend' => 'adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"oefTCT1zGHftFhw8l-gldazxry_ggYxn\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'XNCZQy5oZLtLd46F2RGVngAAAAU'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php/mediaplayer/index'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs%3A32%3A%22mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT%22%3B; advanced-backend=121783d6e275cf7dbbb78ef213acec30; _csrf-backend=adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22oefTCT1zGHftFhw8l-gldazxry_ggYxn%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.1.26 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '60618'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/index.php/mediaplayer/novedades/1/5/127'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PATH_INFO' => '/mediaplayer/novedades/1/5/127'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/mediaplayer/novedades/1/5/127'
+    'PHP_SELF' => '/basic/web/index.php/mediaplayer/novedades/1/5/127'
+    'REQUEST_TIME_FLOAT' => 1557174595.967
+    'REQUEST_TIME' => 1557174595
+]
+2019-05-06 22:40:29 [127.0.0.1][-][-][error][Error] Error: Class 'app\modules\mediaplayer\controllers\AmpacheAlbum' not found in /opt/lampp/htdocs/basic/modules/mediaplayer/controllers/WpController.php:176
+Stack trace:
+#0 [internal function]: app\modules\mediaplayer\controllers\WpController->actionSocial()
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('social', Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('mediaplayer/wp/...', Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#7 {main}
+2019-05-06 22:40:29 [127.0.0.1][-][-][info][application] $_GET = [
+    't' => '13'
+    'token' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs:32:\"mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT\";'
+    'advanced-backend' => '121783d6e275cf7dbbb78ef213acec30'
+    '_csrf-backend' => 'adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"oefTCT1zGHftFhw8l-gldazxry_ggYxn\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'XNCbvDMe@UU@a3H47k@0yAAAAAQ'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs%3A32%3A%22mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT%22%3B; advanced-backend=121783d6e275cf7dbbb78ef213acec30; _csrf-backend=adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22oefTCT1zGHftFhw8l-gldazxry_ggYxn%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.1.26 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '60796'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '//basic/web/index.php/mediaplayer/social/13/1'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PATH_INFO' => '/mediaplayer/social/13/1'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/mediaplayer/social/13/1'
+    'PHP_SELF' => '/basic/web/index.php/mediaplayer/social/13/1'
+    'REQUEST_TIME_FLOAT' => 1557175228.999
+    'REQUEST_TIME' => 1557175228
+]
+2019-05-06 22:45:39 [127.0.0.1][-][-][error][yii\base\ErrorException:64] yii\base\ErrorException: Cannot use app\models\Album as Album because the name is already in use in /opt/lampp/htdocs/basic/modules/mediaplayer/controllers/WpController.php:15
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2019-05-06 22:45:39 [127.0.0.1][-][-][info][application] $_GET = [
+    't' => '13'
+    'token' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs:32:\"mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT\";'
+    'advanced-backend' => '121783d6e275cf7dbbb78ef213acec30'
+    '_csrf-backend' => 'adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"oefTCT1zGHftFhw8l-gldazxry_ggYxn\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'XNCc8@@baVRM1ff3lJy2KQAAAAE'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs%3A32%3A%22mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT%22%3B; advanced-backend=121783d6e275cf7dbbb78ef213acec30; _csrf-backend=adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22oefTCT1zGHftFhw8l-gldazxry_ggYxn%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.1.26 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '60858'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '//basic/web/index.php/mediaplayer/social/13/1'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PATH_INFO' => '/mediaplayer/social/13/1'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/mediaplayer/social/13/1'
+    'PHP_SELF' => '/basic/web/index.php/mediaplayer/social/13/1'
+    'REQUEST_TIME_FLOAT' => 1557175539.645
+    'REQUEST_TIME' => 1557175539
+]
+2019-05-06 22:45:54 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: imgBasePath in /opt/lampp/htdocs/basic/modules/mediaplayer/controllers/WpController.php:178
+Stack trace:
+#0 /opt/lampp/htdocs/basic/modules/mediaplayer/controllers/WpController.php(178): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/opt/lampp/htdo...', 178, Array)
+#1 [internal function]: app\modules\mediaplayer\controllers\WpController->actionSocial()
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('social', Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('mediaplayer/wp/...', Array)
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2019-05-06 22:45:54 [127.0.0.1][-][-][info][application] $_GET = [
+    't' => '13'
+    'token' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs:32:\"mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT\";'
+    'advanced-backend' => '121783d6e275cf7dbbb78ef213acec30'
+    '_csrf-backend' => 'adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"oefTCT1zGHftFhw8l-gldazxry_ggYxn\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'XNCdAhS1ia@In30XFlBgDAAAAAY'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs%3A32%3A%22mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT%22%3B; advanced-backend=121783d6e275cf7dbbb78ef213acec30; _csrf-backend=adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22oefTCT1zGHftFhw8l-gldazxry_ggYxn%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.1.26 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '60860'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '//basic/web/index.php/mediaplayer/social/13/1'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PATH_INFO' => '/mediaplayer/social/13/1'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/mediaplayer/social/13/1'
+    'PHP_SELF' => '/basic/web/index.php/mediaplayer/social/13/1'
+    'REQUEST_TIME_FLOAT' => 1557175554.534
+    'REQUEST_TIME' => 1557175554
+]
+2019-05-06 22:50:24 [127.0.0.1][-][-][error][ParseError] ParseError: syntax error, unexpected end of file in /opt/lampp/htdocs/basic/modules/mediaplayer/views/wp/index.php:76
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(app\modules\mediaplayer\controllers\WpController))
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(367): yii\base\View->render('index', Array, Object(app\modules\mediaplayer\controllers\WpController))
+#3 /opt/lampp/htdocs/basic/modules/mediaplayer/controllers/WpController.php(180): yii\base\Controller->render('index', Array)
+#4 [internal function]: app\modules\mediaplayer\controllers\WpController->actionSocial()
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('social', Array)
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('mediaplayer/wp/...', Array)
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#11 {main}
+2019-05-06 22:50:24 [127.0.0.1][-][-][info][application] $_GET = [
+    't' => '13'
+    'token' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs:32:\"mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT\";'
+    'advanced-backend' => '121783d6e275cf7dbbb78ef213acec30'
+    '_csrf-backend' => 'adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"oefTCT1zGHftFhw8l-gldazxry_ggYxn\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'XNCeEO@baVRM1ff3lJy2KgAAAAE'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs%3A32%3A%22mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT%22%3B; advanced-backend=121783d6e275cf7dbbb78ef213acec30; _csrf-backend=adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22oefTCT1zGHftFhw8l-gldazxry_ggYxn%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.1.26 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '60908'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '//basic/web/index.php/mediaplayer/social/13/1'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PATH_INFO' => '/mediaplayer/social/13/1'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/mediaplayer/social/13/1'
+    'PHP_SELF' => '/basic/web/index.php/mediaplayer/social/13/1'
+    'REQUEST_TIME_FLOAT' => 1557175824.091
+    'REQUEST_TIME' => 1557175824
+]
+2019-05-06 22:50:32 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: urlimg in /opt/lampp/htdocs/basic/modules/mediaplayer/views/wp/index.php:29
+Stack trace:
+#0 /opt/lampp/htdocs/basic/modules/mediaplayer/views/wp/index.php(29): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/opt/lampp/htdo...', 29, Array)
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(325): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(app\modules\mediaplayer\controllers\WpController))
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(367): yii\base\View->render('index', Array, Object(app\modules\mediaplayer\controllers\WpController))
+#5 /opt/lampp/htdocs/basic/modules/mediaplayer/controllers/WpController.php(180): yii\base\Controller->render('index', Array)
+#6 [internal function]: app\modules\mediaplayer\controllers\WpController->actionSocial()
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('social', Array)
+#10 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('mediaplayer/wp/...', Array)
+#11 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2019-05-06 22:50:32 [127.0.0.1][-][-][info][application] $_GET = [
+    't' => '13'
+    'token' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs:32:\"mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT\";'
+    'advanced-backend' => '121783d6e275cf7dbbb78ef213acec30'
+    '_csrf-backend' => 'adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"oefTCT1zGHftFhw8l-gldazxry_ggYxn\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'XNCeGN4q9Cbhi8tiuqgY-AAAAAg'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs%3A32%3A%22mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT%22%3B; advanced-backend=121783d6e275cf7dbbb78ef213acec30; _csrf-backend=adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22oefTCT1zGHftFhw8l-gldazxry_ggYxn%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.1.26 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '60912'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '//basic/web/index.php/mediaplayer/social/13/1'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PATH_INFO' => '/mediaplayer/social/13/1'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/mediaplayer/social/13/1'
+    'PHP_SELF' => '/basic/web/index.php/mediaplayer/social/13/1'
+    'REQUEST_TIME_FLOAT' => 1557175832.573
+    'REQUEST_TIME' => 1557175832
+]
+2019-05-06 22:54:28 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: urlimg in /opt/lampp/htdocs/basic/modules/mediaplayer/views/wp/index.php:29
+Stack trace:
+#0 /opt/lampp/htdocs/basic/modules/mediaplayer/views/wp/index.php(29): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/opt/lampp/htdo...', 29, Array)
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(325): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(app\modules\mediaplayer\controllers\WpController))
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(367): yii\base\View->render('index', Array, Object(app\modules\mediaplayer\controllers\WpController))
+#5 /opt/lampp/htdocs/basic/modules/mediaplayer/controllers/WpController.php(185): yii\base\Controller->render('index', Array)
+#6 [internal function]: app\modules\mediaplayer\controllers\WpController->actionSocial()
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('social', Array)
+#10 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('mediaplayer/wp/...', Array)
+#11 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2019-05-06 22:54:28 [127.0.0.1][-][-][info][application] $_GET = [
+    't' => '13'
+    'token' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs:32:\"mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT\";'
+    'advanced-backend' => '121783d6e275cf7dbbb78ef213acec30'
+    '_csrf-backend' => 'adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"oefTCT1zGHftFhw8l-gldazxry_ggYxn\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'XNCfBNrskYGanC5E9bxdsAAAAAk'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs%3A32%3A%22mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT%22%3B; advanced-backend=121783d6e275cf7dbbb78ef213acec30; _csrf-backend=adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22oefTCT1zGHftFhw8l-gldazxry_ggYxn%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.1.26 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '60930'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '//basic/web/index.php/mediaplayer/social/13/1'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PATH_INFO' => '/mediaplayer/social/13/1'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/mediaplayer/social/13/1'
+    'PHP_SELF' => '/basic/web/index.php/mediaplayer/social/13/1'
+    'REQUEST_TIME_FLOAT' => 1557176068.282
+    'REQUEST_TIME' => 1557176068
+]
+2019-05-06 22:54:38 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: urlimg in /opt/lampp/htdocs/basic/modules/mediaplayer/views/wp/index.php:35
+Stack trace:
+#0 /opt/lampp/htdocs/basic/modules/mediaplayer/views/wp/index.php(35): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/opt/lampp/htdo...', 35, Array)
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(325): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(app\modules\mediaplayer\controllers\WpController))
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(367): yii\base\View->render('index', Array, Object(app\modules\mediaplayer\controllers\WpController))
+#5 /opt/lampp/htdocs/basic/modules/mediaplayer/controllers/WpController.php(185): yii\base\Controller->render('index', Array)
+#6 [internal function]: app\modules\mediaplayer\controllers\WpController->actionSocial()
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('social', Array)
+#10 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('mediaplayer/wp/...', Array)
+#11 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2019-05-06 22:54:37 [127.0.0.1][-][-][info][application] $_GET = [
+    't' => '13'
+    'token' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs:32:\"mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT\";'
+    'advanced-backend' => '121783d6e275cf7dbbb78ef213acec30'
+    '_csrf-backend' => 'adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"oefTCT1zGHftFhw8l-gldazxry_ggYxn\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'XNCfDS5oZLtLd46F2RGV3wAAAAU'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs%3A32%3A%22mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT%22%3B; advanced-backend=121783d6e275cf7dbbb78ef213acec30; _csrf-backend=adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22oefTCT1zGHftFhw8l-gldazxry_ggYxn%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.1.26 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '60932'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '//basic/web/index.php/mediaplayer/social/13/1'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PATH_INFO' => '/mediaplayer/social/13/1'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/mediaplayer/social/13/1'
+    'PHP_SELF' => '/basic/web/index.php/mediaplayer/social/13/1'
+    'REQUEST_TIME_FLOAT' => 1557176077.673
+    'REQUEST_TIME' => 1557176077
+]
+2019-05-06 22:55:07 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Trying to get property of non-object in /opt/lampp/htdocs/basic/modules/mediaplayer/controllers/WpController.php:144
+Stack trace:
+#0 /opt/lampp/htdocs/basic/modules/mediaplayer/controllers/WpController.php(144): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/opt/lampp/htdo...', 144, Array)
+#1 [internal function]: app\modules\mediaplayer\controllers\WpController->actionThumbnail()
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('thumbnail', Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('mediaplayer/wp/...', Array)
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2019-05-06 22:55:07 [127.0.0.1][-][-][info][application] $_GET = [
+    't' => '1557176085'
+    'token' => '7f6a103411ee9569cb2017538cc28e52'
+]
+
+$_COOKIE = [
+    '_csrf' => '2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs:32:\"mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT\";'
+    'advanced-backend' => '121783d6e275cf7dbbb78ef213acec30'
+    '_csrf-backend' => 'adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"oefTCT1zGHftFhw8l-gldazxry_ggYxn\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'XNCfK@@baVRM1ff3lJy2KwAAAAE'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs%3A32%3A%22mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT%22%3B; advanced-backend=121783d6e275cf7dbbb78ef213acec30; _csrf-backend=adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22oefTCT1zGHftFhw8l-gldazxry_ggYxn%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.1.26 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '60948'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 't=1557176085&token=7f6a103411ee9569cb2017538cc28e52'
+    'REQUEST_URI' => '/basic/web/index.php/mediaplayer/thumbnail?t=1557176085&token=7f6a103411ee9569cb2017538cc28e52'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PATH_INFO' => '/mediaplayer/thumbnail'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/mediaplayer/thumbnail'
+    'PHP_SELF' => '/basic/web/index.php/mediaplayer/thumbnail'
+    'REQUEST_TIME_FLOAT' => 1557176107.046
+    'REQUEST_TIME' => 1557176107
+]
+2019-05-06 22:56:12 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: album in /opt/lampp/htdocs/basic/modules/mediaplayer/controllers/WpController.php:176
+Stack trace:
+#0 /opt/lampp/htdocs/basic/modules/mediaplayer/controllers/WpController.php(176): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/opt/lampp/htdo...', 176, Array)
+#1 [internal function]: app\modules\mediaplayer\controllers\WpController->actionSocial()
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('social', Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('mediaplayer/wp/...', Array)
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2019-05-06 22:56:12 [127.0.0.1][-][-][info][application] $_GET = [
+    't' => '13'
+    'token' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs:32:\"mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT\";'
+    'advanced-backend' => '121783d6e275cf7dbbb78ef213acec30'
+    '_csrf-backend' => 'adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"oefTCT1zGHftFhw8l-gldazxry_ggYxn\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'XNCfbBS1ia@In30XFlBgDgAAAAY'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs%3A32%3A%22mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT%22%3B; advanced-backend=121783d6e275cf7dbbb78ef213acec30; _csrf-backend=adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22oefTCT1zGHftFhw8l-gldazxry_ggYxn%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.1.26 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '60950'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '//basic/web/index.php/mediaplayer/social/13/1'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PATH_INFO' => '/mediaplayer/social/13/1'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/mediaplayer/social/13/1'
+    'PHP_SELF' => '/basic/web/index.php/mediaplayer/social/13/1'
+    'REQUEST_TIME_FLOAT' => 1557176172.948
+    'REQUEST_TIME' => 1557176172
+]
+2019-05-06 22:56:25 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Trying to get property of non-object in /opt/lampp/htdocs/basic/modules/mediaplayer/controllers/WpController.php:176
+Stack trace:
+#0 /opt/lampp/htdocs/basic/modules/mediaplayer/controllers/WpController.php(176): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/opt/lampp/htdo...', 176, Array)
+#1 [internal function]: app\modules\mediaplayer\controllers\WpController->actionSocial()
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('social', Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('mediaplayer/wp/...', Array)
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2019-05-06 22:56:25 [127.0.0.1][-][-][info][application] $_GET = [
+    't' => '13'
+    'token' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs:32:\"mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT\";'
+    'advanced-backend' => '121783d6e275cf7dbbb78ef213acec30'
+    '_csrf-backend' => 'adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"oefTCT1zGHftFhw8l-gldazxry_ggYxn\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'XNCfed4q9Cbhi8tiuqgY-QAAAAg'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs%3A32%3A%22mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT%22%3B; advanced-backend=121783d6e275cf7dbbb78ef213acec30; _csrf-backend=adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22oefTCT1zGHftFhw8l-gldazxry_ggYxn%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.1.26 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '60952'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '//basic/web/index.php/mediaplayer/social/13/1'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PATH_INFO' => '/mediaplayer/social/13/1'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/mediaplayer/social/13/1'
+    'PHP_SELF' => '/basic/web/index.php/mediaplayer/social/13/1'
+    'REQUEST_TIME_FLOAT' => 1557176185.543
+    'REQUEST_TIME' => 1557176185
+]
+2019-05-06 22:56:50 [127.0.0.1][-][-][error][Exception] Exception in /opt/lampp/htdocs/basic/modules/mediaplayer/controllers/WpController.php:175
+Stack trace:
+#0 [internal function]: app\modules\mediaplayer\controllers\WpController->actionSocial()
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('social', Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('mediaplayer/wp/...', Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#7 {main}
+2019-05-06 22:56:50 [127.0.0.1][-][-][info][application] $_GET = [
+    't' => '13'
+    'token' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs:32:\"mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT\";'
+    'advanced-backend' => '121783d6e275cf7dbbb78ef213acec30'
+    '_csrf-backend' => 'adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"oefTCT1zGHftFhw8l-gldazxry_ggYxn\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'XNCfktrskYGanC5E9bxdsQAAAAk'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs%3A32%3A%22mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT%22%3B; advanced-backend=121783d6e275cf7dbbb78ef213acec30; _csrf-backend=adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22oefTCT1zGHftFhw8l-gldazxry_ggYxn%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.1.26 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '60954'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '//basic/web/index.php/mediaplayer/social/13/1'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PATH_INFO' => '/mediaplayer/social/13/1'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/mediaplayer/social/13/1'
+    'PHP_SELF' => '/basic/web/index.php/mediaplayer/social/13/1'
+    'REQUEST_TIME_FLOAT' => 1557176210.924
+    'REQUEST_TIME' => 1557176210
+]
+2019-05-06 23:01:01 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Trying to get property of non-object in /opt/lampp/htdocs/basic/modules/mediaplayer/controllers/WpController.php:177
+Stack trace:
+#0 /opt/lampp/htdocs/basic/modules/mediaplayer/controllers/WpController.php(177): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/opt/lampp/htdo...', 177, Array)
+#1 [internal function]: app\modules\mediaplayer\controllers\WpController->actionSocial()
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('social', Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('mediaplayer/wp/...', Array)
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2019-05-06 23:01:01 [127.0.0.1][-][-][info][application] $_GET = [
+    't' => '13'
+    'token' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs:32:\"mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT\";'
+    'advanced-backend' => '121783d6e275cf7dbbb78ef213acec30'
+    '_csrf-backend' => 'adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"oefTCT1zGHftFhw8l-gldazxry_ggYxn\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'XNCgjbp8uo1amu40uXs1tQAAAAA'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs%3A32%3A%22mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT%22%3B; advanced-backend=121783d6e275cf7dbbb78ef213acec30; _csrf-backend=adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22oefTCT1zGHftFhw8l-gldazxry_ggYxn%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.1.26 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '60976'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '//basic/web/index.php/mediaplayer/social/13/1'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PATH_INFO' => '/mediaplayer/social/13/1'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/mediaplayer/social/13/1'
+    'PHP_SELF' => '/basic/web/index.php/mediaplayer/social/13/1'
+    'REQUEST_TIME_FLOAT' => 1557176461.066
+    'REQUEST_TIME' => 1557176461
+]
+2019-05-06 23:01:04 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Trying to get property of non-object in /opt/lampp/htdocs/basic/modules/mediaplayer/controllers/WpController.php:177
+Stack trace:
+#0 /opt/lampp/htdocs/basic/modules/mediaplayer/controllers/WpController.php(177): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/opt/lampp/htdo...', 177, Array)
+#1 [internal function]: app\modules\mediaplayer\controllers\WpController->actionSocial()
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('social', Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('mediaplayer/wp/...', Array)
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2019-05-06 23:01:04 [127.0.0.1][-][-][info][application] $_GET = [
+    't' => '13'
+    'token' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs:32:\"mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT\";'
+    'advanced-backend' => '121783d6e275cf7dbbb78ef213acec30'
+    '_csrf-backend' => 'adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"oefTCT1zGHftFhw8l-gldazxry_ggYxn\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'XNCgkCA8h8-NjtkR0N43wQAAAAs'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs%3A32%3A%22mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT%22%3B; advanced-backend=121783d6e275cf7dbbb78ef213acec30; _csrf-backend=adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22oefTCT1zGHftFhw8l-gldazxry_ggYxn%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.1.26 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '60978'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '//basic/web/index.php/mediaplayer/social/13/1'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PATH_INFO' => '/mediaplayer/social/13/1'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/mediaplayer/social/13/1'
+    'PHP_SELF' => '/basic/web/index.php/mediaplayer/social/13/1'
+    'REQUEST_TIME_FLOAT' => 1557176464.204
+    'REQUEST_TIME' => 1557176464
+]
+2019-05-06 23:01:32 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Trying to get property of non-object in /opt/lampp/htdocs/basic/modules/mediaplayer/controllers/WpController.php:177
+Stack trace:
+#0 /opt/lampp/htdocs/basic/modules/mediaplayer/controllers/WpController.php(177): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/opt/lampp/htdo...', 177, Array)
+#1 [internal function]: app\modules\mediaplayer\controllers\WpController->actionSocial()
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('social', Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('mediaplayer/wp/...', Array)
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2019-05-06 23:01:32 [127.0.0.1][-][-][info][application] $_GET = [
+    't' => '13'
+    'token' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs:32:\"mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT\";'
+    'advanced-backend' => '121783d6e275cf7dbbb78ef213acec30'
+    '_csrf-backend' => 'adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"oefTCT1zGHftFhw8l-gldazxry_ggYxn\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'XNCgrHZZiVHH9-9gnCoeuAAAAAc'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs%3A32%3A%22mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT%22%3B; advanced-backend=121783d6e275cf7dbbb78ef213acec30; _csrf-backend=adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22oefTCT1zGHftFhw8l-gldazxry_ggYxn%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.1.26 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '60984'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '//basic/web/index.php/mediaplayer/social/13/1'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PATH_INFO' => '/mediaplayer/social/13/1'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/mediaplayer/social/13/1'
+    'PHP_SELF' => '/basic/web/index.php/mediaplayer/social/13/1'
+    'REQUEST_TIME_FLOAT' => 1557176492.049
+    'REQUEST_TIME' => 1557176492
+]
+2019-05-06 23:01:44 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Trying to get property of non-object in /opt/lampp/htdocs/basic/modules/mediaplayer/controllers/WpController.php:144
+Stack trace:
+#0 /opt/lampp/htdocs/basic/modules/mediaplayer/controllers/WpController.php(144): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/opt/lampp/htdo...', 144, Array)
+#1 [internal function]: app\modules\mediaplayer\controllers\WpController->actionThumbnail()
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('thumbnail', Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('mediaplayer/wp/...', Array)
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2019-05-06 23:01:44 [127.0.0.1][-][-][info][application] $_GET = [
+    't' => '1557176085'
+    'token' => '7f6a103411ee9569cb2017538cc28e52'
+]
+
+$_COOKIE = [
+    '_csrf' => '2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs:32:\"mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT\";'
+    'advanced-backend' => '121783d6e275cf7dbbb78ef213acec30'
+    '_csrf-backend' => 'adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"oefTCT1zGHftFhw8l-gldazxry_ggYxn\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'XNCguDv7@TibbCcTe42hugAAAAM'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs%3A32%3A%22mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT%22%3B; advanced-backend=121783d6e275cf7dbbb78ef213acec30; _csrf-backend=adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22oefTCT1zGHftFhw8l-gldazxry_ggYxn%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.1.26 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '60986'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 't=1557176085&token=7f6a103411ee9569cb2017538cc28e52'
+    'REQUEST_URI' => '/basic/web/index.php/mediaplayer/thumbnail?t=1557176085&token=7f6a103411ee9569cb2017538cc28e52'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PATH_INFO' => '/mediaplayer/thumbnail'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/mediaplayer/thumbnail'
+    'PHP_SELF' => '/basic/web/index.php/mediaplayer/thumbnail'
+    'REQUEST_TIME_FLOAT' => 1557176504.843
+    'REQUEST_TIME' => 1557176504
+]
+2019-05-06 23:05:55 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: urlimage in /opt/lampp/htdocs/basic/modules/mediaplayer/views/wp/index.php:29
+Stack trace:
+#0 /opt/lampp/htdocs/basic/modules/mediaplayer/views/wp/index.php(29): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/opt/lampp/htdo...', 29, Array)
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(325): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(app\modules\mediaplayer\controllers\WpController))
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(367): yii\base\View->render('index', Array, Object(app\modules\mediaplayer\controllers\WpController))
+#5 /opt/lampp/htdocs/basic/modules/mediaplayer/controllers/WpController.php(102): yii\base\Controller->render('index', Array)
+#6 [internal function]: app\modules\mediaplayer\controllers\WpController->actionIndex()
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#10 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('mediaplayer/wp/...', Array)
+#11 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2019-05-06 23:05:55 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs:32:\"mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT\";'
+    'advanced-backend' => '121783d6e275cf7dbbb78ef213acec30'
+    '_csrf-backend' => 'adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"oefTCT1zGHftFhw8l-gldazxry_ggYxn\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'XNChs@@baVRM1ff3lJy2LAAAAAE'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs%3A32%3A%22mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT%22%3B; advanced-backend=121783d6e275cf7dbbb78ef213acec30; _csrf-backend=adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22oefTCT1zGHftFhw8l-gldazxry_ggYxn%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.1.26 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '32770'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/index.php/mediaplayer/index'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PATH_INFO' => '/mediaplayer/index'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/mediaplayer/index'
+    'PHP_SELF' => '/basic/web/index.php/mediaplayer/index'
+    'REQUEST_TIME_FLOAT' => 1557176755.554
+    'REQUEST_TIME' => 1557176755
+]
+2019-05-06 23:07:45 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Trying to get property of non-object in /opt/lampp/htdocs/basic/modules/mediaplayer/controllers/WpController.php:177
+Stack trace:
+#0 /opt/lampp/htdocs/basic/modules/mediaplayer/controllers/WpController.php(177): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/opt/lampp/htdo...', 177, Array)
+#1 [internal function]: app\modules\mediaplayer\controllers\WpController->actionSocial()
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('social', Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('mediaplayer/wp/...', Array)
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2019-05-06 23:07:45 [127.0.0.1][-][-][info][application] $_GET = [
+    't' => '13'
+    'token' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs:32:\"mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT\";'
+    'advanced-backend' => '121783d6e275cf7dbbb78ef213acec30'
+    '_csrf-backend' => 'adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"oefTCT1zGHftFhw8l-gldazxry_ggYxn\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'XNCiISA8h8-NjtkR0N43wgAAAAs'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs%3A32%3A%22mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT%22%3B; advanced-backend=121783d6e275cf7dbbb78ef213acec30; _csrf-backend=adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22oefTCT1zGHftFhw8l-gldazxry_ggYxn%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.1.26 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '32796'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '//basic/web/index.php/mediaplayer/social/13/1'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PATH_INFO' => '/mediaplayer/social/13/1'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/mediaplayer/social/13/1'
+    'PHP_SELF' => '/basic/web/index.php/mediaplayer/social/13/1'
+    'REQUEST_TIME_FLOAT' => 1557176865.69
+    'REQUEST_TIME' => 1557176865
+]
+2019-05-06 23:07:48 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "mediaplayer/social/". in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('mediaplayer/soc...', Array)
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2019-05-06 23:07:48 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs:32:\"mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT\";'
+    'advanced-backend' => '121783d6e275cf7dbbb78ef213acec30'
+    '_csrf-backend' => 'adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"oefTCT1zGHftFhw8l-gldazxry_ggYxn\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'XNCiJDMe@UU@a3H47k@0@AAAAAQ'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs%3A32%3A%22mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT%22%3B; advanced-backend=121783d6e275cf7dbbb78ef213acec30; _csrf-backend=adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22oefTCT1zGHftFhw8l-gldazxry_ggYxn%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.1.26 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '32798'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '//basic/web/index.php/mediaplayer/social/'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PATH_INFO' => '/mediaplayer/social/'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/mediaplayer/social/'
+    'PHP_SELF' => '/basic/web/index.php/mediaplayer/social/'
+    'REQUEST_TIME_FLOAT' => 1557176868.46
+    'REQUEST_TIME' => 1557176868
+]
+2019-05-06 23:08:38 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "mediaplayer/social/". in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('mediaplayer/soc...', Array)
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2019-05-06 23:08:38 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs:32:\"mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT\";'
+    'advanced-backend' => '121783d6e275cf7dbbb78ef213acec30'
+    '_csrf-backend' => 'adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"oefTCT1zGHftFhw8l-gldazxry_ggYxn\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'XNCiVnZZiVHH9-9gnCoeuQAAAAc'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs%3A32%3A%22mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT%22%3B; advanced-backend=121783d6e275cf7dbbb78ef213acec30; _csrf-backend=adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22oefTCT1zGHftFhw8l-gldazxry_ggYxn%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.1.26 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '32804'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '//basic/web/index.php/mediaplayer/social/'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PATH_INFO' => '/mediaplayer/social/'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/mediaplayer/social/'
+    'PHP_SELF' => '/basic/web/index.php/mediaplayer/social/'
+    'REQUEST_TIME_FLOAT' => 1557176918.388
+    'REQUEST_TIME' => 1557176918
+]
+2019-05-06 23:08:43 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "mediaplayer/social/". in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('mediaplayer/soc...', Array)
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2019-05-06 23:08:43 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs:32:\"mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT\";'
+    'advanced-backend' => '121783d6e275cf7dbbb78ef213acec30'
+    '_csrf-backend' => 'adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"oefTCT1zGHftFhw8l-gldazxry_ggYxn\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'XNCiWzv7@TibbCcTe42hvwAAAAM'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs%3A32%3A%22mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT%22%3B; advanced-backend=121783d6e275cf7dbbb78ef213acec30; _csrf-backend=adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22oefTCT1zGHftFhw8l-gldazxry_ggYxn%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.1.26 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '32806'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/index.php/mediaplayer/social/'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PATH_INFO' => '/mediaplayer/social/'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/mediaplayer/social/'
+    'PHP_SELF' => '/basic/web/index.php/mediaplayer/social/'
+    'REQUEST_TIME_FLOAT' => 1557176923.183
+    'REQUEST_TIME' => 1557176923
+]
+2019-05-06 23:10:35 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "mediaplayer/social/". in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('mediaplayer/soc...', Array)
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2019-05-06 23:10:35 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs:32:\"mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT\";'
+    'advanced-backend' => '121783d6e275cf7dbbb78ef213acec30'
+    '_csrf-backend' => 'adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"oefTCT1zGHftFhw8l-gldazxry_ggYxn\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'XNCiy94q9Cbhi8tiuqgZCAAAAAg'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs%3A32%3A%22mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT%22%3B; advanced-backend=121783d6e275cf7dbbb78ef213acec30; _csrf-backend=adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22oefTCT1zGHftFhw8l-gldazxry_ggYxn%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.1.26 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '32814'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/index.php/mediaplayer/social/'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PATH_INFO' => '/mediaplayer/social/'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/mediaplayer/social/'
+    'PHP_SELF' => '/basic/web/index.php/mediaplayer/social/'
+    'REQUEST_TIME_FLOAT' => 1557177035.501
+    'REQUEST_TIME' => 1557177035
+]
+2019-05-06 23:10:53 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "mediaplayer/social/". in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('mediaplayer/soc...', Array)
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2019-05-06 23:10:53 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs:32:\"mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT\";'
+    'advanced-backend' => '121783d6e275cf7dbbb78ef213acec30'
+    '_csrf-backend' => 'adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"oefTCT1zGHftFhw8l-gldazxry_ggYxn\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'XNCi3TMe@UU@a3H47k@0@wAAAAQ'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs%3A32%3A%22mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT%22%3B; advanced-backend=121783d6e275cf7dbbb78ef213acec30; _csrf-backend=adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22oefTCT1zGHftFhw8l-gldazxry_ggYxn%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.1.26 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '32824'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/index.php/mediaplayer/social/'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PATH_INFO' => '/mediaplayer/social/'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/mediaplayer/social/'
+    'PHP_SELF' => '/basic/web/index.php/mediaplayer/social/'
+    'REQUEST_TIME_FLOAT' => 1557177053.965
+    'REQUEST_TIME' => 1557177053
+]
+2019-05-06 23:10:55 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "mediaplayer/social/". in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('mediaplayer/soc...', Array)
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2019-05-06 23:10:55 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs:32:\"mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT\";'
+    'advanced-backend' => '121783d6e275cf7dbbb78ef213acec30'
+    '_csrf-backend' => 'adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"oefTCT1zGHftFhw8l-gldazxry_ggYxn\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'XNCi3zMe@UU@a3H47k@0-gAAAAQ'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs%3A32%3A%22mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT%22%3B; advanced-backend=121783d6e275cf7dbbb78ef213acec30; _csrf-backend=adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22oefTCT1zGHftFhw8l-gldazxry_ggYxn%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.1.26 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '32824'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/index.php/mediaplayer/social/'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PATH_INFO' => '/mediaplayer/social/'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/mediaplayer/social/'
+    'PHP_SELF' => '/basic/web/index.php/mediaplayer/social/'
+    'REQUEST_TIME_FLOAT' => 1557177055.436
+    'REQUEST_TIME' => 1557177055
+]
+2019-05-06 23:10:56 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "mediaplayer/social/". in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('mediaplayer/soc...', Array)
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2019-05-06 23:10:56 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs:32:\"mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT\";'
+    'advanced-backend' => '121783d6e275cf7dbbb78ef213acec30'
+    '_csrf-backend' => 'adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"oefTCT1zGHftFhw8l-gldazxry_ggYxn\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'XNCi4DMe@UU@a3H47k@1AAAAAAQ'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs%3A32%3A%22mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT%22%3B; advanced-backend=121783d6e275cf7dbbb78ef213acec30; _csrf-backend=adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22oefTCT1zGHftFhw8l-gldazxry_ggYxn%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.1.26 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '32824'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/index.php/mediaplayer/social/'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PATH_INFO' => '/mediaplayer/social/'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/mediaplayer/social/'
+    'PHP_SELF' => '/basic/web/index.php/mediaplayer/social/'
+    'REQUEST_TIME_FLOAT' => 1557177056.765
+    'REQUEST_TIME' => 1557177056
+]
+2019-05-06 23:13:35 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Trying to get property of non-object in /opt/lampp/htdocs/basic/modules/mediaplayer/controllers/WpController.php:178
+Stack trace:
+#0 /opt/lampp/htdocs/basic/modules/mediaplayer/controllers/WpController.php(178): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/opt/lampp/htdo...', 178, Array)
+#1 [internal function]: app\modules\mediaplayer\controllers\WpController->actionSocial()
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('social', Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('mediaplayer/wp/...', Array)
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2019-05-06 23:13:35 [127.0.0.1][-][-][info][application] $_GET = [
+    't' => '13'
+    'token' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs:32:\"mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT\";'
+    'advanced-backend' => '121783d6e275cf7dbbb78ef213acec30'
+    '_csrf-backend' => 'adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"oefTCT1zGHftFhw8l-gldazxry_ggYxn\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'XNCjf@@baVRM1ff3lJy2LwAAAAE'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs%3A32%3A%22mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT%22%3B; advanced-backend=121783d6e275cf7dbbb78ef213acec30; _csrf-backend=adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22oefTCT1zGHftFhw8l-gldazxry_ggYxn%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.1.26 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '32952'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/index.php/mediaplayer/social/13/1'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PATH_INFO' => '/mediaplayer/social/13/1'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/mediaplayer/social/13/1'
+    'PHP_SELF' => '/basic/web/index.php/mediaplayer/social/13/1'
+    'REQUEST_TIME_FLOAT' => 1557177215.246
+    'REQUEST_TIME' => 1557177215
+]
+2019-05-06 23:16:33 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Trying to get property of non-object in /opt/lampp/htdocs/basic/modules/mediaplayer/controllers/WpController.php:178
+Stack trace:
+#0 /opt/lampp/htdocs/basic/modules/mediaplayer/controllers/WpController.php(178): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/opt/lampp/htdo...', 178, Array)
+#1 [internal function]: app\modules\mediaplayer\controllers\WpController->actionSocial()
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('social', Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('mediaplayer/wp/...', Array)
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2019-05-06 23:16:33 [127.0.0.1][-][-][info][application] $_GET = [
+    't' => '13'
+    'token' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs:32:\"mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT\";'
+    'advanced-backend' => '121783d6e275cf7dbbb78ef213acec30'
+    '_csrf-backend' => 'adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"oefTCT1zGHftFhw8l-gldazxry_ggYxn\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'XNCkMXZZiVHH9-9gnCoewgAAAAc'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs%3A32%3A%22mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT%22%3B; advanced-backend=121783d6e275cf7dbbb78ef213acec30; _csrf-backend=adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22oefTCT1zGHftFhw8l-gldazxry_ggYxn%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.1.26 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '33010'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/index.php/mediaplayer/social/13/1'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PATH_INFO' => '/mediaplayer/social/13/1'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/mediaplayer/social/13/1'
+    'PHP_SELF' => '/basic/web/index.php/mediaplayer/social/13/1'
+    'REQUEST_TIME_FLOAT' => 1557177393.559
+    'REQUEST_TIME' => 1557177393
+]
+2019-05-06 23:21:22 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: channel in /opt/lampp/htdocs/basic/modules/mediaplayer/controllers/WpController.php:187
+Stack trace:
+#0 /opt/lampp/htdocs/basic/modules/mediaplayer/controllers/WpController.php(187): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/opt/lampp/htdo...', 187, Array)
+#1 [internal function]: app\modules\mediaplayer\controllers\WpController->actionSocial()
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('social', Array)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('mediaplayer/wp/...', Array)
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2019-05-06 23:21:22 [127.0.0.1][-][-][info][application] $_GET = [
+    'c' => '13'
+    'a' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs:32:\"mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT\";'
+    'advanced-backend' => '121783d6e275cf7dbbb78ef213acec30'
+    '_csrf-backend' => 'adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"oefTCT1zGHftFhw8l-gldazxry_ggYxn\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'XNClUjMe@UU@a3H47k@1DAAAAAQ'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs%3A32%3A%22mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT%22%3B; advanced-backend=121783d6e275cf7dbbb78ef213acec30; _csrf-backend=adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22oefTCT1zGHftFhw8l-gldazxry_ggYxn%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.1.26 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '33038'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/index.php/mediaplayer/social/13/1'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PATH_INFO' => '/mediaplayer/social/13/1'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/mediaplayer/social/13/1'
+    'PHP_SELF' => '/basic/web/index.php/mediaplayer/social/13/1'
+    'REQUEST_TIME_FLOAT' => 1557177682.146
+    'REQUEST_TIME' => 1557177682
+]
+2019-05-06 23:21:38 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: descripción in /opt/lampp/htdocs/basic/modules/mediaplayer/views/wp/index.php:38
+Stack trace:
+#0 /opt/lampp/htdocs/basic/modules/mediaplayer/views/wp/index.php(38): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/opt/lampp/htdo...', 38, Array)
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(325): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(app\modules\mediaplayer\controllers\WpController))
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(367): yii\base\View->render('index', Array, Object(app\modules\mediaplayer\controllers\WpController))
+#5 /opt/lampp/htdocs/basic/modules/mediaplayer/controllers/WpController.php(188): yii\base\Controller->render('index', Array)
+#6 [internal function]: app\modules\mediaplayer\controllers\WpController->actionSocial()
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('social', Array)
+#10 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('mediaplayer/wp/...', Array)
+#11 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2019-05-06 23:21:38 [127.0.0.1][-][-][info][application] $_GET = [
+    'c' => '13'
+    'a' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs:32:\"mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT\";'
+    'advanced-backend' => '121783d6e275cf7dbbb78ef213acec30'
+    '_csrf-backend' => 'adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"oefTCT1zGHftFhw8l-gldazxry_ggYxn\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'XNClYnZZiVHH9-9gnCoewwAAAAc'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs%3A32%3A%22mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT%22%3B; advanced-backend=121783d6e275cf7dbbb78ef213acec30; _csrf-backend=adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22oefTCT1zGHftFhw8l-gldazxry_ggYxn%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.1.26 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '33040'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/index.php/mediaplayer/social/13/1'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PATH_INFO' => '/mediaplayer/social/13/1'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/mediaplayer/social/13/1'
+    'PHP_SELF' => '/basic/web/index.php/mediaplayer/social/13/1'
+    'REQUEST_TIME_FLOAT' => 1557177698.112
+    'REQUEST_TIME' => 1557177698
+]
+2019-05-06 23:27:38 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: album in /opt/lampp/htdocs/basic/modules/mediaplayer/views/wp/index.php:73
+Stack trace:
+#0 /opt/lampp/htdocs/basic/modules/mediaplayer/views/wp/index.php(73): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/opt/lampp/htdo...', 73, Array)
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(325): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(app\modules\mediaplayer\controllers\WpController))
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(367): yii\base\View->render('index', Array, Object(app\modules\mediaplayer\controllers\WpController))
+#5 /opt/lampp/htdocs/basic/modules/mediaplayer/controllers/WpController.php(103): yii\base\Controller->render('index', Array)
+#6 [internal function]: app\modules\mediaplayer\controllers\WpController->actionIndex()
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#10 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('mediaplayer/wp/...', Array)
+#11 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2019-05-06 23:27:38 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs:32:\"mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT\";'
+    'advanced-backend' => '121783d6e275cf7dbbb78ef213acec30'
+    '_csrf-backend' => 'adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"oefTCT1zGHftFhw8l-gldazxry_ggYxn\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'XNCmyjMe@UU@a3H47k@1DgAAAAQ'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs%3A32%3A%22mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT%22%3B; advanced-backend=121783d6e275cf7dbbb78ef213acec30; _csrf-backend=adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22oefTCT1zGHftFhw8l-gldazxry_ggYxn%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.1.26 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '33110'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/index.php/mediaplayer/index'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PATH_INFO' => '/mediaplayer/index'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/mediaplayer/index'
+    'PHP_SELF' => '/basic/web/index.php/mediaplayer/index'
+    'REQUEST_TIME_FLOAT' => 1557178058.503
+    'REQUEST_TIME' => 1557178058
+]
+2019-05-07 02:37:11 [127.0.0.1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] Conexión rehusada in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Connection.php:579
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Connection.php(579): PDO->__construct('mysql:host=loca...', 'public_radioalb...', '**radioalbum**', NULL)
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Connection.php(836): yii\db\Connection->open()
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Command.php(208): yii\db\Connection->getSlavePdo()
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Command.php(815): yii\db\Command->prepare(true)
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Query.php(206): yii\db\Command->queryAll()
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/ActiveQuery.php(130): yii\db\Query->all(NULL)
+#9 /opt/lampp/htdocs/basic/modules/mediaplayer/controllers/WpController.php(110): yii\db\ActiveQuery->all()
+#10 [internal function]: app\modules\mediaplayer\controllers\WpController->actionChannels()
+#11 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#12 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#13 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('channels', Array)
+#14 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('mediaplayer/wp/...', Array)
+#15 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#17 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] Conexión rehusada in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Connection.php:534
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Connection.php(836): yii\db\Connection->open()
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Command.php(208): yii\db\Connection->getSlavePdo()
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Command.php(815): yii\db\Command->prepare(true)
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/Query.php(206): yii\db\Command->queryAll()
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/db/ActiveQuery.php(130): yii\db\Query->all(NULL)
+#7 /opt/lampp/htdocs/basic/modules/mediaplayer/controllers/WpController.php(110): yii\db\ActiveQuery->all()
+#8 [internal function]: app\modules\mediaplayer\controllers\WpController->actionChannels()
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#10 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#11 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('channels', Array)
+#12 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('mediaplayer/wp/...', Array)
+#13 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#15 {main}
+Additional Information:
+
+2019-05-07 02:37:07 [127.0.0.1][-][-][info][application] $_GET = [
+    't' => '1557185493'
+    'token' => 'd4d9e99b1bb10c347e35da82503f0e1d'
+]
+
+$_COOKIE = [
+    '_csrf' => '2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs:32:\"mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT\";'
+    'advanced-backend' => '121783d6e275cf7dbbb78ef213acec30'
+    '_csrf-backend' => 'adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"oefTCT1zGHftFhw8l-gldazxry_ggYxn\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'XNDTM4KPzcMn7N5TgEv5qwAAAAc'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/index.php/mediaplayer/index'
+    'HTTP_X_CSRF_TOKEN' => 'TXlMLUVOV2EgPCJkdAkTGS48GB4qGR0pJA8EAD03G0wjOC5iJn80NQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=2225b637bf3cc029d7a486e8a689c15b02f095c8dd2e01b79b20d777a2b70f3cs%3A32%3A%22mEnI1GDxcET3oWJHivH-xyL-nAbOc1cT%22%3B; advanced-backend=121783d6e275cf7dbbb78ef213acec30; _csrf-backend=adf61838675660f343c9afb971a1d67b23c7f018c3d0e8c5ed5c705605737478a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22oefTCT1zGHftFhw8l-gldazxry_ggYxn%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.1.26 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '33324'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/index.php/mediaplayer/channels/1557185493/d4d9e99b1bb10c347e35da82503f0e1d'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PATH_INFO' => '/mediaplayer/channels/1557185493/d4d9e99b1bb10c347e35da82503f0e1d'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/mediaplayer/channels/1557185493/d4d9e99b1bb10c347e35da82503f0e1d'
+    'PHP_SELF' => '/basic/web/index.php/mediaplayer/channels/1557185493/d4d9e99b1bb10c347e35da82503f0e1d'
+    'REQUEST_TIME_FLOAT' => 1557189427.148
+    'REQUEST_TIME' => 1557189427
+]
+2019-05-07 04:30:47 [127.0.0.1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Uninitialized string offset: 0 in /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Request.php:718
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Request.php(718): yii\base\ErrorHandler->handleError(8, 'Uninitialized s...', '/opt/lampp/htdo...', 718, Array)
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Request.php(656): yii\web\Request->resolvePathInfo()
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/UrlManager.php(230): yii\web\Request->getPathInfo()
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Request.php(180): yii\web\UrlManager->parseRequest(Object(yii\web\Request))
+#4 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(75): yii\web\Request->resolve()
+#5 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#7 {main}
+2019-05-07 04:30:47 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '84f3ab3772ccb340d3a0bb889a1a88ce0b0aeca751ca608c43cb1e8e16b0ace0s:32:\"GleDgJj5fBy55SOxFMz1JB17UReQewdR\";'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'XNDt1zkSASchVa8GLcTqsgAAAAI'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=84f3ab3772ccb340d3a0bb889a1a88ce0b0aeca751ca608c43cb1e8e16b0ace0s%3A32%3A%22GleDgJj5fBy55SOxFMz1JB17UReQewdR%22%3B'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.1.26 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '43896'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/index.php'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PHP_SELF' => '/basic/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1557196247.914
+    'REQUEST_TIME' => 1557196247
+]
+2019-05-07 04:30:55 [127.0.0.1][-][-][error][Error] Error: Class 'app\modules\webplayer\components\BarraNavIzq\BarraNavIzqAsset' not found in /opt/lampp/htdocs/basic/modules/webplayer/views/wp/index.php:4
+Stack trace:
+#0 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(325): require()
+#1 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/opt/lampp/htdo...', Array)
+#2 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/opt/lampp/htdo...', Array, Object(app\modules\webplayer\controllers\WpController))
+#3 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(367): yii\base\View->render('index', Array, Object(app\modules\webplayer\controllers\WpController))
+#4 /opt/lampp/htdocs/basic/modules/webplayer/controllers/WpController.php(52): yii\base\Controller->render('index', Array)
+#5 [internal function]: app\modules\webplayer\controllers\WpController->actionIndex()
+#6 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#7 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#8 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#9 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('webplayer/wp/in...', Array)
+#10 /opt/lampp/htdocs/basic/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /opt/lampp/htdocs/basic/web/index.php(12): yii\base\Application->run()
+#12 {main}
+2019-05-07 04:30:55 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '84f3ab3772ccb340d3a0bb889a1a88ce0b0aeca751ca608c43cb1e8e16b0ace0s:32:\"GleDgJj5fBy55SOxFMz1JB17UReQewdR\";'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'XNDt3zLELvFEKsvp94c6OgAAAAg'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/basic/web/'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_csrf=84f3ab3772ccb340d3a0bb889a1a88ce0b0aeca751ca608c43cb1e8e16b0ace0s%3A32%3A%22GleDgJj5fBy55SOxFMz1JB17UReQewdR%22%3B'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'
+    'LD_LIBRARY_PATH' => '/opt/lampp/lib:/opt/lampp/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Unix) OpenSSL/1.0.2q PHP/7.1.26 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/opt/lampp/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/basic/web/index.php'
+    'REMOTE_PORT' => '43900'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic/web/index.php/webplayer/wp/index'
+    'SCRIPT_NAME' => '/basic/web/index.php'
+    'PATH_INFO' => '/webplayer/wp/index'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/webplayer/wp/index'
+    'PHP_SELF' => '/basic/web/index.php/webplayer/wp/index'
+    'REQUEST_TIME_FLOAT' => 1557196255.51
+    'REQUEST_TIME' => 1557196255
+]

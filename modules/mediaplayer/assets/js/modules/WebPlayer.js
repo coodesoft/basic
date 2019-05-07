@@ -122,6 +122,10 @@ var WebPlayer = (function($){
           });
           
       }
+      
+      self.status = function(){
+          return (_audio.paused) ? Config.status.PAUSED : Config.status.PLAYING;
+      }
   }
 
   var instance;

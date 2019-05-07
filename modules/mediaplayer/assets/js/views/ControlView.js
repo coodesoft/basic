@@ -7,14 +7,6 @@ var ControlView = (function($){
         let controller = Subject.getInstance();
         
         self.init = function(){
-            
-            $('.'+Config.ui.CONTROLS).off().on('click', '.'+Config.ui.PLAY, function(){
-                controller.notify(null, 'CLICK_PLAY');        
-            });
-
-            $('.'+Config.ui.CONTROLS).on('click', '.'+Config.ui.PAUSE, function(){
-                controller.notify(null, 'CLICK_PAUSE');
-            });
 
             $('.'+Config.ui.CONTROLS).on('click', '.'+Config.ui.NEXT_SONG, function(){
                 controller.notify(null, 'CLICK_NEXT_SONG');        

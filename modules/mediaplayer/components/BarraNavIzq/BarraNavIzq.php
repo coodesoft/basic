@@ -1,5 +1,5 @@
 <?php
-namespace app\modules\webplayer\components\BarraNavIzq;
+namespace app\modules\mediaplayer\components\BarraNavIzq;
 
 use yii\base\Widget;
 use app\modules\EditorPaginas\components\htmlview\htmlview;

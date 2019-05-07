@@ -1,12 +1,12 @@
 <?php
 
-namespace app\modules\webplayer\components\social;
+namespace app\modules\mediaplayer\components\social;
 
 use yii\web\AssetBundle;
 
 class socialAsset extends AssetBundle
 {
-    public $sourcePath = '@app/modules/webplayer/components/social';
+    public $sourcePath = '@app/modules/mediaplayer/components/social';
 
     public $css = [
         'css/social.css',
@@ -18,6 +18,7 @@ class socialAsset extends AssetBundle
     
     public $depends = [
         'app\assets\AppAsset',
+        'app\modules\mediaplayer\assets\MediaPlayerAsset',
     ];
 }
 ?>

@@ -3,7 +3,9 @@ const Vel_mov = 100; //Variable que contiene la velocidad de actualizacion del s
 const Margen_izq = 20;
 
 function Situar_Control(Control,Posicion) {
-	var limite = 100/parseInt($("#wp-selector-display").css('width'))*parseInt($('.bullet').css('width'))*26 - 100;
+	var limite = 100/parseInt($("#wp-selector-display").css('width'))*parseInt($('.bullet').css('width'))*10 - 100;
+    
+    console.log(limite);
 	if (Posicion < Margen_izq && Posicion > -limite){
 	$(Control).animate({'margin-left': Posicion + '%'},Vel_mov);
 	$(Control).attr('data-Valor',Posicion);} 
@@ -66,19 +68,3 @@ $(function(){
     });
 
 });
-
-
-
-///////// Codigo para la seleccion de skins
-$.fn.loadwebplayer = function (asociatedFunction){ //genera vista
-	this.click(function(){
-        console.log('loadwebplayer');
-
-        var viewID = $(this).attr('data-target');
-		
-		$(this).siblings().attr('data-status', 'inactive');
-		$(this).attr('data-status', 'active');
-		loadWebPlayerSkin(viewID, asociatedFunction);
-	})
-	return this;
-}

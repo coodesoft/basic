@@ -1,5 +1,5 @@
 <?php
-namespace app\modules\webplayer\components\social;
+namespace app\modules\mediaplayer\components\social;
 
 use yii\base\Widget;
 

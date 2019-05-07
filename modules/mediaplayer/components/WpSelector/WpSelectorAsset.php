@@ -13,7 +13,6 @@ class WpSelectorAsset extends AssetBundle
     ];
     
     public $js = [
-        'js/SkinController.js',
         'js/SkinSelector.js',
     	'js/wpselector.js',
     ];

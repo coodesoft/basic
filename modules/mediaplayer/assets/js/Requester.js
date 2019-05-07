@@ -30,6 +30,8 @@ var Requester = (function($){
       
       let controller = Subject.getInstance();
       
+      self.social = false;
+      
       self.request = function(urlTarget, success, error){
         
           let jxhr = $.ajax({
@@ -53,9 +55,11 @@ var Requester = (function($){
           let success = function(data){ 
               data = JSON.parse(data);
               _connection = data; 
-      
-              controller.notify(data, 'SUCCESS_CONNECTION');
-              
+                
+              if ( !self.social )
+                  controller.notify(data, 'SUCCESS_CONNECTION');
+              else
+                  controller.notify(data, 'SOCIAL_CONNECTION');
           };
           
           let error = function(data){ 

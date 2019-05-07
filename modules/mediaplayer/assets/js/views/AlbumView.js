@@ -9,6 +9,8 @@ var AlbumView = (function($){
         let controller = Subject.getInstance();
         
         let actualOffset;
+        
+        let albumCount;
                 
         self.ALBUM_VIEW_SIZE = 120 //30 de ancho + 10 de margin;
 
@@ -51,11 +53,20 @@ var AlbumView = (function($){
                 self.appendToDOMList(album);
                 size++;
             }
+            albumCount = size;
             
             let width = size*self.ALBUM_VIEW_SIZE;
             
             self.ALBUM_LIST.style.width = width+'px';
             self.init();
+        }
+        
+        self.updateWidth = function(album_view = 0){
+            self.ALBUM_VIEW_SIZE = album_view;
+            let width = albumCount * self.ALBUM_VIEW_SIZE;
+            
+            self.ALBUM_LIST.style.width = width + 'px';
+            
         }
         
         self.updatePlaybackInfo = function(data){

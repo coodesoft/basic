@@ -24,7 +24,7 @@ IndexAsset::register($this);
   		</div>
   		<div class="panel-footer alt-pie">
   		<!--<a href="index.php?r=webplayer/wp/index"> -->
-  			<a href=<?php echo Url::to(['webplayer/wp/index']) ?> >
+  			<a href=<?php echo Url::to(['mediaplayer/wp/index']) ?> >
   				<div class ="min-wbtn btn btn-warning col-xs-12 btn-lg col-md-6 col-md-offset-3">Ingresar</div>
 			</a>
 		</div>

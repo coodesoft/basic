@@ -4,11 +4,14 @@ var CircularVolumeView = (function($){
         
         var self = this;
         
+        const WebPath = "/basic/web/assets";
+        
+        let skin;
+        
         let control;
         
         let controller = Subject.getInstance();
 
-        
         let getVolume = function(angle){
             let proportional = 100/180;
             let volume = ( angle>=270 ) ? (angle - 270) * proportional : (angle * proportional) + 50; 
@@ -32,7 +35,14 @@ var CircularVolumeView = (function($){
             $('.'+Config.ui.VOLUME).removeClass(Config.ui.VERTICAL_VOLUME);
             $('.'+Config.ui.VOLUME).addClass(Config.ui.CIRCULAR_VOLUME);
             
-            $('.volume-indicator').remove();
+            $('.'+Config.ui.VOLUME_INDICATOR).remove();
+            
+            let indicator = $('<div></div>');
+            indicator.addClass(Config.ui.VOLUME_INDICATOR);
+            $('.'+Config.ui.VOLUME).html(indicator);
+            $('.'+Config.ui.VOLUME).removeAttr('style');
+            
+            indicator.css('background', 'url(' + WebPath + '/webplayers/' + skin + '/images/img.png) no-repeat');
             
         }
         
@@ -42,8 +52,7 @@ var CircularVolumeView = (function($){
             
             configureControlView();
             
-            if (!control){
-                control = new Propeller('.'+Config.ui.CIRCULAR_VOLUME, {
+            control = new Propeller('.'+Config.ui.VOLUME_INDICATOR, {
                      inertia: 0, 
                      speed: 0,
                      angle: _angle,
@@ -58,9 +67,10 @@ var CircularVolumeView = (function($){
 
                      },
                  });
-            }else{
-                control.angle =  _angle;
-            }
+        }
+        
+        self.setSkin = function(param){
+            skin = param;
         }
         
                 
@@ -69,10 +79,11 @@ var CircularVolumeView = (function($){
     var instance;
     
     return {
-        getInstance: function(){
+        getInstance: function(skin){
             if ( !instance )
                 instance = new CircularVolumeView();
             
+            instance.setSkin(skin);
             return instance;
         }
     }
